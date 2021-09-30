@@ -1,0 +1,26 @@
+@use "../utils" as *;
+
+.features {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 rem(30);
+  }
+  &__item {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+    padding: rem(75) rem(42) rem(70);
+    border-radius: rem(10);
+    background-color: rgb(43, 49, 57);
+    h3 {
+      margin-top: mb(42, 0, 0, 1.591, 22);
+      font-size: rem(22);
+      line-height: 1.591;
+      font-weight: 800;
+    }
+    p {
+      margin-top: mb(34, 1.591, 22, 1.889, 18);
+    }
+  }
+}

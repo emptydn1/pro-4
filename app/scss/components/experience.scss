@@ -1,0 +1,31 @@
+@use "../utils" as *;
+
+// background-size: cover;
+//     height: 23rem;
+//     background-blend-mode: screen;
+//     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+.experience {
+  .container {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 0 rem(30);
+  }
+  &__number {
+    flex-basis: rem(670);
+    text-align: center;
+    &-img {
+    }
+    span {
+      font-size: rem(400);
+      font-family: var(--f-open);
+      color: rgb(104, 121, 183);
+      text-transform: uppercase;
+      line-height: 0.088;
+    }
+  }
+  &__title {
+    flex-basis: rem(470);
+  }
+}

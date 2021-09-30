@@ -1,0 +1,30 @@
+@use "../utils" as *;
+
+.about {
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 0 rem(100);
+  }
+  &__left {
+    max-width: rem(470);
+    a {
+      margin-top: mb(65, 1.889, 18, 0, 0);
+    }
+  }
+  &__image {
+    position: relative;
+    max-width: rem(600);
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url(../../../app/img/about/4.png);
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    //   background-size: contain;
+    //   bottom: 0;
+    //   left: 0;
+    //   min-height: 100px;
+    // }
+  }
+}
