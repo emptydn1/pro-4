@@ -23,6 +23,11 @@
     align-items: center;
     gap: 0 rem(30);
     margin-top: mb(60, 1.2, 40, 1.2, 18);
+    img {
+      @include breakpoint-down(small) {
+        width: 20px;
+      }
+    }
     p {
       font-size: rem(18);
       font-family: var(--f-open);

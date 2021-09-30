@@ -4,27 +4,41 @@
   .container {
     display: flex;
     align-items: center;
-    gap: 0 rem(100);
+    justify-content: space-between;
+    gap: rem(100);
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
+
   &__left {
     max-width: rem(470);
+    @include breakpoint-down(medium) {
+      text-align: center;
+    }
     a {
       margin-top: mb(65, 1.889, 18, 0, 0);
     }
   }
+
   &__image {
     position: relative;
     max-width: rem(600);
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   background-image: url(../../../app/img/about/4.png);
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   background-size: contain;
-    //   bottom: 0;
-    //   left: 0;
-    //   min-height: 100px;
-    // }
+
+    @include breakpoint-down(medium) {
+      text-align: center;
+      max-width: none;
+    }
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
+
+  &__img {
+    left: 48%;
+    position: absolute;
+    top: 54%;
+    transform: translate(-50%, -50%);
   }
 }

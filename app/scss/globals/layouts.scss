@@ -18,6 +18,14 @@
   &--supper {
     padding-top: rem(280);
     padding-bottom: rem(390);
+    @include breakpoint-down(medium) {
+      padding-top: rem(150);
+      padding-bottom: rem(250);
+    }
+    @include breakpoint-down(small) {
+      padding-top: rem(50);
+      padding-bottom: rem(100);
+    }
   }
   // &--big {
   //   padding-top: rem(200);
@@ -26,9 +34,23 @@
   &--small {
     padding-top: rem(150);
     padding-bottom: rem(200);
+    // @include breakpoint-down(medium) {
+    //   padding-top: rem(75);
+    //   padding-bottom: rem(100);
+    // }
+    // @include breakpoint-down(small) {
+    //   padding-top: rem(50);
+    //   padding-bottom: rem(66.6666667);
+    // }
   }
   &--bt {
     padding-bottom: rem(200);
+    @include breakpoint-down(medium) {
+      padding-bottom: rem(100);
+    }
+    @include breakpoint-down(small) {
+      padding-bottom: rem(66.6666667);
+    }
   }
 
   //   &--pall {

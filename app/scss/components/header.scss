@@ -26,5 +26,8 @@
     display: flex;
     align-items: center;
     gap: 0 rem(70);
+    img {
+      width: 30px;
+    }
   }
 }
