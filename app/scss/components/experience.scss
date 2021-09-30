@@ -18,7 +18,7 @@
     text-transform: uppercase;
     line-height: 0.088;
     padding: rem(145) 0;
-    background-image: url("../../app/img/experience/1.png");
+    background-image: url("./../app/img/experience/1.png");
     background-position-x: 20%;
     background-position-y: 45%;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../../app/img/experience/2.png");
+      background-image: url("./../app/img/experience/2.png");
       left: 55%;
       height: 100%;
       width: 100%;
