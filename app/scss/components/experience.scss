@@ -1,28 +1,40 @@
 @use "../utils" as *;
 
-// background-size: cover;
-//     height: 23rem;
-//     background-blend-mode: screen;
-//     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 .experience {
   .container {
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
     gap: 0 rem(30);
+    display: flex;
+    align-items: center;
   }
-  &__number {
-    flex-basis: rem(670);
+
+  span {
+    position: relative;
     text-align: center;
-    &-img {
-    }
-    span {
-      font-size: rem(400);
-      font-family: var(--f-open);
-      color: rgb(104, 121, 183);
-      text-transform: uppercase;
-      line-height: 0.088;
+    flex-basis: rem(670);
+    font-size: rem(400);
+    font-family: var(--f-open);
+    font-weight: 800;
+    color: hsl(227, 35%, 56%);
+    text-transform: uppercase;
+    line-height: 0.088;
+    padding: rem(145) 0;
+    background-image: url("../../app/img/experience/1.png");
+    background-position-x: 20%;
+    background-position-y: 45%;
+    background-repeat: no-repeat;
+    background-size: 94%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../app/img/experience/2.png");
+      left: 55%;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
     }
   }
   &__title {
