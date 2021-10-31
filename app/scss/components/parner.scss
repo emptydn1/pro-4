@@ -16,6 +16,7 @@
     display: grid;
     place-items: center;
     flex-basis: calc((100% - (3 * 30 * 0.0625rem)) / 4);
+    height: rem(200);
     @include breakpoint-down(medium) {
       flex-basis: calc((100% - (3 * 30 * 0.0625rem)) / 2);
     }
